@@ -1,0 +1,21 @@
+#auth {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 5fr 1rem;
+    grid-template-areas:
+        "signin  ....... signup"
+        "general general general";
+}
+
+#auth #general-error {
+    grid-area: general;
+}
+
+#auth #signin {
+    grid-area: signin;
+}
+
+#auth #signup {
+    grid-area: signup;
+}

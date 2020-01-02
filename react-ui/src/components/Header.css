@@ -1,0 +1,47 @@
+header {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "... title auth"
+    "main-nav main-nav main-nav";
+}
+
+header h1 {
+  text-align: center;
+  grid-area: title;
+  margin: auto;
+}
+
+header #auth {
+  grid-area: auth;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "signin signout";
+}
+
+header #main-nav {
+  grid-area: main-nav;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+}
+
+header a {
+  box-sizing: border-box;
+  padding: 0 10px;
+  display: flex;
+  width: 100%;
+  height: 3rem;
+  text-decoration: none; 
+}
+
+header a span {
+  margin: auto;
+}
+header a:hover {
+  background-color: #33333333;
+}
