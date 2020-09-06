@@ -5,7 +5,7 @@ import sgr from '../jsonResponse';
 import db from '../db';
 import auth from '../authHelpers';
 import { gglVerify } from '../authGoogle';
-import uuidv4 from 'uuid/v4';
+import { v4 as uuidv4 } from 'uuid';
 import { sendForgotEmail } from '../sendGrid';
 import helpers from './helpers';
 

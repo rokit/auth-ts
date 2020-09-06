@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Signin from "./pages/Signin";
 import ForgotPassword from "./pages/ForgotPassword";
 import ResetPassword from "./pages/ResetPassword";
+import Protected from "./pages/Protected";
 
 import "normalize.css";
 import "./App.css";
@@ -41,6 +42,9 @@ function App() {
           </Route>
           <Route path="/reset-password">
             <ResetPassword authenticatedSet={authenticatedSet} />
+          </Route>
+          <Route path="/protected">
+            <Protected />
           </Route>
         </Switch>
       </div>

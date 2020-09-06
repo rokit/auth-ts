@@ -9,7 +9,7 @@ function Header(props) {
   const signOut = () => {
     localStorage.removeItem("authapp");
     props.authenticatedSet(false);
-    if (location.pathname === "/users") {
+    if (location.pathname !== "/sign-in") {
       history.push("/sign-in");
     }
   }
